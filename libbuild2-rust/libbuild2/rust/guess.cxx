@@ -147,7 +147,16 @@ namespace build2
             {
               size_t e (l.rfind ('"'));
               size_t b (l.rfind ('"', e - 1) + 1);
-              ci.target.assign (l, b, e - b);
+              size_t if_line (l.find ('-', b));
+              if (if_line == -1)
+              {
+                string l_tmp (l.substr(b, e - b) + "-none-elf");
+                ci.target.assign (l_tmp, 0, l_tmp.length());
+              }
+              else
+              {
+                ci.target.assign (l, b, e - b);
+              }
             }
 
             cs.append (l);
