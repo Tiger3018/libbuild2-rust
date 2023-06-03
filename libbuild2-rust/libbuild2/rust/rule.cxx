@@ -137,7 +137,7 @@ namespace build2
       args.push_back ("--crate-name");
       args.push_back (t.name.c_str ());
 
-      args.push_back ("--crate-type=bin");
+      // args.push_back ("--crate-type=bin");
 
       args.push_back ("-o");
       args.push_back (relo.string ().c_str ());

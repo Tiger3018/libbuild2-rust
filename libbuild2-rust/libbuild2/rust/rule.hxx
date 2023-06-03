@@ -4,6 +4,7 @@
 #include <libbuild2/utility.hxx>
 
 #include <libbuild2/rule.hxx>
+// #include <libbuild2/bin/target.hxx>
 
 namespace build2
 {

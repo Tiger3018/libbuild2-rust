@@ -330,6 +330,9 @@ namespace build2
       rs.insert_rule<exe> (perform_update_id,   "rust.compile", m);
       rs.insert_rule<exe> (perform_clean_id,    "rust.compile", m);
       rs.insert_rule<exe> (configure_update_id, "rust.compile", m);
+      // rs.insert_rule<build2::bin::lib> (perform_update_id,   "rust.compile", m);
+      // rs.insert_rule<build2::bin::lib> (perform_clean_id,    "rust.compile", m);
+      // rs.insert_rule<build2::bin::lib> (configure_update_id, "rust.compile", m);
 
       return true;
     }
